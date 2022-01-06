@@ -4,7 +4,7 @@ import os,sys,random,struct
  
 x = str(struct.calcsize("P") * 8)
  
-if '64' in x:
+ if '64' in x:
  
     os.system('chmod 777 s64 && ./s64')
  
