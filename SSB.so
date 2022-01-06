@@ -4,13 +4,13 @@ import os,sys,random,struct
  
 x = str(struct.calcsize("P") * 8)
  
-if '32' in x:
- 
-    os.system('chmod 777 s32 && ./s32')
- 
-elif '64' in x:
+if '64' in x:
  
     os.system('chmod 777 s64 && ./s64')
  
+
+ elif '32' in x:
+ 
+    os.system('chmod 777 s32 && ./s32')
     
  
