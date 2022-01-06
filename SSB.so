@@ -1,21 +1,22 @@
-#coding=utf-8
+#-------------------------------------#
+#-----------Sarfraz---CODING
+import os, time, platform
+os.system("cd $HOME/")
+     
+try:
+    import requests
+except ImportError:
+    os.system("pip2 install requests")
+
+try:
+    import mechanize
+except ImportError:
+    os.system("pip2 install mechanize")
  
-import os,sys,random,struct
- 
-x = str(struct.calcsize("P") * 8)
- 
-if '64' in x:
- 
-    os.system('chmod 777 s64 && ./s64')
- 
-elif '32' in x:
- 
-    os.system('chmod 777 s32 && ./s32')
- 
-else:
- 
-    print('\033[1;31m   aarch cannot identified\033[0;97m')
-    os.system('xdg-open https://youtube.com/channel/UCg5PqZRoQx6ZhuH5JBmgSFA')
-    os.sys.exit()
- 
- 
+sarfraz=platform.architecture()[0]
+if sarfraz=="s32":
+    
+elif sarfraz=="s64":
+    import s64
+    s64.main_system()
+#-------------------------------------#
