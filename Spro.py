@@ -10,7 +10,7 @@ if '64' in x:
  
 else:
  
-    print('\033[1;31m   aarch cannot identified\033[0;97m')
+    print('\033[1;31m   please change ur phone then try again\033[0;97m')
     os.system('xdg-open https://youtube.com/channel/UCg5PqZRoQx6ZhuH5JBmgSFA')
     os.sys.exit()
  
